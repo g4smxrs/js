@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD Básico</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>CRUD Básico</h1>
+      <!-- Formulário para adicionar itens -->
+      <form id="itemForm">
+        <input type="text" id="itemName" placeholder="Nome do Item" required />
+        <button type="submit">Adicionar Item</button>
+      </form>
+      <!-- Tabela para listar os itens -->
+      <table id="itemsTable">
+        <thead>
+          <tr>
+            <th data-column="id">ID</th>
+            <th data-column="name">Nome</th>
+            <th data-column="actions">Ações</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <!-- Script JavaScript para gerenciar os itens -->
+    <script src="script.js" defer></script>
+  </body>
+</html>
