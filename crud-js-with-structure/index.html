@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD Básico</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navegação principal -->
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#add-item">Adicionar Item</a></li>
+        <li><a href="#items-list">Lista de Itens</a></li>
+      </ul>
+    </nav>
+
+    <!-- Seção principal -->
+    <section id="home">
+      <div class="container">
+        <h1>CRUD Básico</h1>
+      </div>
+    </section>
+
+    <!-- Seção para adicionar itens -->
+    <section id="add-item">
+      <div class="container">
+        <!-- Formulário para adicionar novos itens -->
+        <form id="itemForm">
+          <input
+            type="text"
+            id="itemName"
+            placeholder="Nome do Item"
+            required
+          />
+          <button type="submit">Adicionar Item</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Seção para listar itens -->
+    <section id="items-list">
+      <div class="container">
+        <!-- Formulário de pesquisa de itens -->
+        <form id="searchForm">
+          <input type="text" id="searchQuery" placeholder="Pesquisar Itens" />
+          <button type="submit">Pesquisar</button>
+        </form>
+        <!-- Botão para exportar a lista de itens para Excel -->
+        <button id="exportBtn">Exportar para Excel</button>
+        <!-- Tabela para exibir a lista de itens -->
+        <table id="itemsTable">
+          <thead>
+            <tr>
+              <th data-column="id">ID</th>
+              <th data-column="name">Nome</th>
+              <th data-column="actions">Ações</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+      <p>&copy; 2023 CRUD Básico. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Script JavaScript para gerenciar os itens -->
+    <script src="script.js" defer></script>
+  </body>
+</html>

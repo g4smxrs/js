@@ -1,0 +1,175 @@
+/* Estilos gerais do corpo */
+body {
+  font-family: Arial, sans-serif; /* Define a fonte padrão */
+  background-color: #f4f4f4; /* Define a cor de fundo */
+  margin: 0; /* Remove margens padrão */
+  padding: 0; /* Remove preenchimento padrão */
+  line-height: 1.6; /* Define a altura da linha */
+}
+
+/* Container principal */
+.container {
+  width: 80%; /* Define a largura do container */
+  max-width: 1200px; /* Define a largura máxima do container */
+  margin: 0 auto; /* Centraliza o container */
+  padding: 20px; /* Adiciona preenchimento interno */
+  overflow: hidden; /* Oculta o conteúdo que transborda */
+}
+
+/* Estilo do cabeçalho principal */
+h1 {
+  text-align: center; /* Centraliza o texto */
+  margin-top: 2rem; /* Adiciona margem superior */
+  font-size: 2.5rem; /* Define o tamanho da fonte */
+  color: #333; /* Define a cor do texto */
+}
+
+/* Estilos da navbar */
+nav {
+  background-color: #333; /* Define a cor de fundo da navbar */
+  color: #fff; /* Define a cor do texto */
+  padding: 1rem 0; /* Adiciona preenchimento interno */
+}
+
+nav ul {
+  list-style: none; /* Remove marcadores de lista */
+  display: flex; /* Define o layout flexível */
+  justify-content: center; /* Centraliza os itens */
+  margin: 0; /* Remove margens */
+  padding: 0; /* Remove preenchimento */
+}
+
+nav ul li {
+  margin: 0 1rem; /* Adiciona margem entre os itens */
+}
+
+nav ul li a {
+  color: #fff; /* Define a cor do texto */
+  text-decoration: none; /* Remove sublinhado */
+  font-size: 1.1rem; /* Define o tamanho da fonte */
+  padding: 0.5rem 1rem; /* Adiciona preenchimento interno */
+  transition: background-color 0.3s ease; /* Adiciona transição suave */
+}
+
+nav ul li a:hover {
+  background-color: #575757; /* Define a cor de fundo ao passar o mouse */
+  border-radius: 5px; /* Adiciona bordas arredondadas */
+}
+
+/* Estilos do formulário */
+form {
+  display: flex; /* Define o layout flexível */
+  justify-content: center; /* Centraliza os itens */
+  margin-bottom: 2rem; /* Adiciona margem inferior */
+  flex-wrap: wrap; /* Permite quebra de linha */
+}
+
+form input {
+  padding: 0.75rem; /* Adiciona preenchimento interno */
+  font-size: 1rem; /* Define o tamanho da fonte */
+  margin-right: 0.5rem; /* Adiciona margem à direita */
+  border: 1px solid #ccc; /* Define a borda */
+  border-radius: 5px; /* Adiciona bordas arredondadas */
+  flex: 1; /* Permite que o campo cresça */
+  min-width: 200px; /* Define a largura mínima */
+}
+
+form button {
+  padding: 0.75rem 1.5rem; /* Adiciona preenchimento interno */
+  font-size: 1rem; /* Define o tamanho da fonte */
+  cursor: pointer; /* Define o cursor como ponteiro */
+  border: none; /* Remove a borda */
+  background-color: #333; /* Define a cor de fundo */
+  color: #fff; /* Define a cor do texto */
+  border-radius: 5px; /* Adiciona bordas arredondadas */
+  transition: background-color 0.3s ease; /* Adiciona transição suave */
+}
+
+form button:hover {
+  background-color: #575757; /* Define a cor de fundo ao passar o mouse */
+}
+
+/* Estilos da tabela */
+table {
+  width: 100%; /* Define a largura da tabela */
+  border-collapse: collapse; /* Remove espaços entre as células */
+  margin-top: 2rem; /* Adiciona margem superior */
+}
+
+table,
+th,
+td {
+  border: 1px solid #ddd; /* Define a borda */
+}
+
+th,
+td {
+  padding: 1rem; /* Adiciona preenchimento interno */
+  text-align: center; /* Centraliza o texto */
+}
+
+th {
+  background-color: #f4f4f4; /* Define a cor de fundo do cabeçalho */
+}
+
+/* Estilos do botão de exportação */
+#exportBtn {
+  display: block; /* Define o botão como um bloco */
+  margin: 1rem auto; /* Centraliza o botão horizontalmente */
+  padding: 0.75rem 1.5rem; /* Adiciona preenchimento interno */
+  font-size: 1rem; /* Define o tamanho da fonte */
+  cursor: pointer; /* Define o cursor como ponteiro */
+  border: none; /* Remove a borda */
+  background-color: #333; /* Define a cor de fundo */
+  color: #fff; /* Define a cor do texto */
+  border-radius: 5px; /* Adiciona bordas arredondadas */
+  transition: background-color 0.3s ease; /* Adiciona transição suave */
+}
+
+#exportBtn:hover {
+  background-color: #575757; /* Define a cor de fundo ao passar o mouse */
+}
+
+/* Estilos do footer */
+footer {
+  background-color: #333; /* Define a cor de fundo */
+  color: #fff; /* Define a cor do texto */
+  text-align: center; /* Centraliza o texto */
+  padding: 1rem 0; /* Adiciona preenchimento interno */
+  position: fixed; /* Fixa o footer na parte inferior */
+  width: 100%; /* Define a largura do footer */
+  bottom: 0; /* Posiciona o footer na parte inferior */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .container {
+    width: 90%; /* Ajusta a largura do container */
+  }
+
+  nav ul {
+    flex-direction: column; /* Altera a direção dos itens */
+    align-items: center; /* Centraliza os itens */
+  }
+
+  nav ul li {
+    margin: 0.5rem 0; /* Ajusta a margem entre os itens */
+  }
+
+  form {
+    flex-direction: column; /* Altera a direção dos itens */
+    align-items: center; /* Centraliza os itens */
+  }
+
+  form input,
+  form button {
+    width: 100%; /* Ajusta a largura dos itens */
+    margin: 0.5rem 0; /* Ajusta a margem entre os itens */
+  }
+
+  table,
+  th,
+  td {
+    font-size: 0.9rem; /* Ajusta o tamanho da fonte */
+  }
+}
